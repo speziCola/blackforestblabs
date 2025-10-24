@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --forground-strong:#fff;
     --forground-regular:#A5A5A5;
-    --forground-light:#666666;
     --background-contrast: #131313;
     --border: #3F3F3F;
     --background: #000;
@@ -248,7 +247,7 @@ footer {
     }
 
     & span {
-        color: var(--forground-light);
+        color: var(--forground-regular);
         font-family: "Text", sans-serif;
         font-size: 0.75rem;
         font-weight: 400;

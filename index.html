@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Basics -->
+    <title>blackforestlabs</title>
+    <meta name="description" content="A collective of nerds, gamers, and software builders who meet to debate code, games, and life – long before AI hype moved into the forest." />
+    <meta name="keywords" content="Black Forest Labs, software builders, engineering collective, nerd culture, tech community" />
+    <meta name="author" content="Black Forest Labs" />
+
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Black Forest Labs – Looking for the AI unicorn? Wrong forest." />
+    <meta property="og:description" content="We're just a bunch of nerds, gamers, and software builders who meet to argue about code, games, and life – back when we still pretended to have our lives together." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blackforestlabs.de" />
+    <meta property="og:image" content="./assets/meta" />
+    <meta property="og:site_name" content="Black Forest Labs" />
+
+    <!-- Favicon (optional, replace path) -->
+    <link rel="icon" href="./assets/fav--32.svg" type="image/svg+xml" /> 
+    <link rel="icon" href="./assets/fav--64.ico" type="image/x-icon" />
+     
+
+    <!-- CSS File (empty for now) -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="side"></div>
+    <header>
+        <h1 class="glitch" data-text="Black Forest Labs.">Black Forest Labs.</h1>
+        <img src="./assets/plus.svg" alt="plus sign" height="13" width="13" />
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Looking for the AI unicorn? </br> Wrong forest. <span>→ <a href="https://blackforestlabs.ai/">blackforestlabs.ai</a></span></h2>
+            <span class="line">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+        </div>
+        <div class="wrapper">
+            <p>We’re just a bunch of nerds, gamers, and software builders who used to meet every week at the same Italian place to argue about code, games, and life - back when we still pretended to have our lives together.</p>
+            <img src="./assets/st-angelo.webp" alt="Mathematiker">
+        </div>
+        <div class="profiles">
+           <div class="card">
+                 <img src="./assets/alexanker-kuhrt.webp" alt="Alexander Kuhrt">
+                 <div class="content">
+                    <h3>Alexander Kuhrt</h3>
+                    <h4>Lead Product Engineering at Etops</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+           <div class="card">
+                 <img src="./assets/marius-bethge.webp" alt="Marius Bethge">
+                 <div class="content">
+                    <h3>Marius Bethge</h3>
+                    <h4>Web Solutions Engineer at Google</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+           <div class="card">
+                 <img src="./assets/julian-korell.webp" alt="Julian Korell">
+                 <div class="content">
+                    <h3>Julian Korell</h3>
+                    <h4>Head of Engineering at Reservix</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+           <div class="card">
+                 <img src="./assets/christopher-kuhrt.webp" alt="Christopher Kuhrt">
+                 <div class="content">
+                    <h3>Christopher Kuhrt</h3>
+                    <h4>Head of Research & Design at Etops</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+           <div class="card">
+                 <img src="./assets/julien-thoma.webp" alt="Julien Thoma">
+                 <div class="content">
+                    <h3>Julien Thoma</h3>
+                    <h4>Software Engineer at Etops</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+           <div class="card">
+                 <img src="./assets/anton-stepan.webp" alt="Anton Stepan">
+                 <div class="content">
+                    <h3>Anton Stepan</h3>
+                    <h4>Engineering Management at Citadel</h4>
+                    <a href="">Linkedin</a>
+                 </div>
+           </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Black Forest Labs.</br>
+        <span>Since 2015</span></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById("hoverAudio");
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("mouseenter", () => {
+            audio.currentTime = 0;
+            audio.play().catch(err => {
+                if (err.name === "NotAllowedError") {
+                console.warn("Autoplay blocked by browser policy. Wait for a user gesture first.", err);
+                } else {
+                console.error(err);
+                }
+            });
+            });
+        });
+    });
+</script>
+<audio id="hoverAudio" src="./assets/minimalist-hover.mp3" preload="auto"></audio>
+</body>
+</html>

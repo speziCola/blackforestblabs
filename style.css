@@ -139,7 +139,7 @@ body {
         "side footer";
     width: auto;
     height: 100svh;
-    @media (max-width: 1280px) {
+    @media (max-width: 1600px) {
         grid-template-columns: minmax(8px, 128px) minmax(320px, 1280px) auto;
     }
     @media (max-width: 650px) {

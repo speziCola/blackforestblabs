@@ -160,7 +160,7 @@ header {
 
     & img {
         position: absolute;
-        bottom: 0;
+        bottom: -12px;
         left: -12px;
         background: var(--background);
     }

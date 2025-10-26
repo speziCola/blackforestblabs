@@ -47,11 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
     --forground-strong:#fff;
-    --forground-regular:#A5A5A5;
-    --background-contrast: #131313;
-    --border: #3F3F3F;
-    --background: #000;
-    --highlight: #E44C00;
+    --forground-regular:#8f8f8f;
+    --forground-light:#3F3F3F;
+    --background-contrast:#131313;
+    --border:#3F3F3F;
+    --background:#000;
+    --highlight:#E44C00;
     --column-gap: 56px;
 }
 
@@ -197,10 +198,23 @@ main {
         grid-column: span 3;
         grid-row: 1;
         grid-template-columns: subgrid;
+       
+        & p {
+            grid-column: span 3;
+            font-size: 0.8125rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: var(--forground-regular);
+
+            & span {
+                color: var(--forground-light);
+            }
+        }   
     }
 
     & .line {
         grid-column: span 1;
+        grid-row: 3;
         background-image: url("./assets/line.svg");
         background-repeat: repeat-x;
         background-size: 5px 8px;

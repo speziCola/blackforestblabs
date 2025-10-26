@@ -204,10 +204,15 @@ main {
             font-size: 0.8125rem;
             font-weight: 400;
             line-height: 1.25;
-            color: var(--forground-regular);
+            color: var(--forground-light);
 
-            & span {
-                color: var(--forground-light);
+            & .bfwrong {
+                display: inline-block;
+            }
+
+            & .bfright {
+                display: inline-block;
+                color: var(--forground-regular);
             }
         }   
     }
